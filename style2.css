@@ -1,0 +1,100 @@
+body {
+  overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+  overflow-y: auto;   /* Permite a rolagem vertical */
+}
+
+/* Estilo do container principal */
+.container {
+  display: flex;
+  flex-direction: column;  /* Organiza tudo em uma coluna */
+  height: 100vh;           /* Ocupa 100% da altura da tela */
+  width: 100%;             /* Ocupa toda a largura da tela */
+  justify-content: flex-start; /* A área de login ficará no topo */
+}
+
+/* Estilo da área de login/perfil */
+.top-section {
+  display: flex;
+  flex-direction: column;   /* Organiza o ícone e o nome na vertical */
+  align-items: center;      /* Centraliza o conteúdo */
+  justify-content: center;  /* Centraliza o conteúdo verticalmente */
+  height: 50px;            /* Altura da área de login */
+  background-color: #f0f0f0; /* Cor de fundo da seção */
+  border-bottom: 1px solid #ccc; /* Borda abaixo para separar da área dos botões */
+  width: 100%;              /* Ocupa toda a largura */
+  padding: 10px;
+  
+}
+
+/* Nome do usuário ou detalhes do perfil */
+.top-section h2 {
+  margin: 0;
+  color: #28a745;
+  font-size: 18px;
+}
+
+/* Ícone do perfil */
+.top-section i {
+  font-size: 30px;
+  color: #28a745;
+  margin-bottom: 5px;
+}
+
+/* Estilo do container dos botões */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  align-items: center;     /* Centraliza os botões verticalmente */
+  width: 100%;             /* Garantir que ocupe toda a largura */
+  height: 100%;            /* Ocupa toda a altura disponível */
+  gap: 20px;               /* Espaço entre os botões */
+  margin-top: 20px;        /* Distância entre a área de login e os botões */
+  flex-grow: 1;            /* Faz com que os botões ocupem o restante da altura disponível */
+}
+
+/* Estilo dos botões */
+.option-button {
+  display: flex;
+  align-items: center;  /* Alinha o ícone e o texto no centro */
+  justify-content: center;
+  width: 330px;          /* Largura dos botões */
+  height: 220px;         /* Altura dos botões */
+  font-size: 18px;
+  background-color: white;
+  color: #28a745;
+  border: 1px solid #ccc;
+  border-radius: 0px;    /* Retira bordas arredondadas */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+  user-select: none;
+}
+
+/* Estilo do ícone */
+.option-button i {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+/* Efeito de hover nos botões */
+.option-button:hover {
+  background-color: #28a745;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito de clique nos botões */
+.option-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  text-decoration: none; /* Remove o sublinhado de todos os links */
+}
+
+a:hover, a:focus {
+  text-decoration: none; /* Garante que o sublinhado também seja removido quando o link estiver em foco ou for clicado */
+}
+

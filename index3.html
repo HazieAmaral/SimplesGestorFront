@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciar Funcionários</title>
+  <link rel="stylesheet" href="style2.css" /> <!-- Conectando o CSS externo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+    }
+    .container {
+      margin: 30px;
+    }
+    h1 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .btn-add {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin: 20px 0;
+      text-align: center;
+      display: inline-block;
+    }
+    .btn-add:hover {
+      background-color: #45a049;
+    }
+    .form-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      width: 50%;
+      margin: auto;
+    }
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Gerenciar Funcionários</h1>
+</header>
+
+<div class="container">
+  <div class="form-container">
+    <h2>Adicionar Novo Funcionário</h2>
+    <form>
+      <input type="text" placeholder="Nome do Funcionário" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Cargo" required />
+      <input type="text" placeholder="Departamento" required />
+      <button type="submit" class="btn-add">Adicionar Funcionário</button>
+    </form>
+  </div>
+
+  <h2>Funcionários Cadastrados</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Cargo</th>
+        <th>Departamento</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>João Silva</td>
+        <td>joao@exemplo.com</td>
+        <td>Desenvolvedor</td>
+        <td>Tecnologia</td>
+        <td>
+          <button class="btn-edit">Editar</button>
+          <button class="btn-delete">Excluir</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Ana Costa</td>
+        <td>ana@exemplo.com</td>
+        <td>Gestora de TI</td>
+        <td>Tecnologia</td>
+        <td>
+          <button class="btn-edit">Editar</button>
+          <button class="btn-delete">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

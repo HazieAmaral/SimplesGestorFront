@@ -1,0 +1,105 @@
+/* Garantir que o HTML ocupe 100% da altura */
+html, body {
+  height: 100%; /* Garanta que ambos ocupem a altura total */
+  margin: 0;    /* Remove margens padrão */
+}
+/* Título */
+.login-box h2 {
+  position: relative;  /* Necessário para ajustar a posição */
+  top: -10px;          /* Move o título para cima */
+}
+/* Fundo da página com imagem */
+body {
+  display: flex;
+  justify-content: center;  /* Centraliza horizontalmente */
+  align-items: center;      /* Centraliza verticalmente */
+  background-image: url('Image/Design\ sem\ nome.png'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* A imagem irá cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-attachment: fixed; /* Imagem fixa no fundo */
+  background-color: #f0f2f5; /* Cor de fundo caso a imagem não carregue */
+  font-family: Arial, sans-serif;
+}
+
+/* Container do login */
+.login-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+padding-right: 40px; /* espaço para o ícone */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+
+/* Inputs */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px -15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Botão */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px #1e7e34;
+  transition: all 0.1s ease-in-out;
+}
+
+/* Efeito de clique do botão */
+.login-box button:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px #1e7e34;
+}
+
+/* Hover do botão */
+.login-box button:hover {
+  background-color: #218838;
+}
+
+/* Foco nos inputs */
+.login-box input:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Título */
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+/* Estilo para o botão redondo */
+.user-button {
+  width: 80px;               /* Largura do botão */
+  height: 80px;              /* Altura do botão */
+  border-radius: 50%;        /* Faz o botão ficar redondo */
+  background-color: #28a745; /* Cor de fundo */
+  color: white;              /* Cor do texto */
+  font-size: 14px;           /* Tamanho da fonte */
+  display: flex;             /* Flexbox para centralizar o texto */
+  justify-content: center;   /* Centraliza horizontalmente */
+  align-items: center;       /* Centraliza verticalmente */
+  border: none;              /* Remove a borda */
+  cursor: pointer;          /* Altera o cursor para indicar um botão */
+  transition: all 0.3s ease; /* Efeito suave de transição */
+}
+
+/* Efeito de hover */
+.user-button:hover {
+  background-color: #218838; /* Cor quando o mouse passa em cima */
+}
